@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Apply_Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Fill Out This Form</h1><br>
+        <div class="PersonalInfo" id="perso">
+            <h2>Personal Information</h2>
+            <div class="row">
+                <div class="col-md-6">
+                   <label><b>Company Name/ Seller Name :</b></label></br>
+                   <input type="text" class="form-control" id="f_name" plclass="form-control" placeholder="Company-Name" required ><br>
+                   <label><b>Email:</b></label></br>
+                   <input type="text" class="form-control" id="email" placeholder="email" required /><br>
+                   
+                </div>
+                <div class="col-md-6">
+                   <label><b>Phone_No:</b></label></br>
+                   <input type="tel" pattern="[0-9]{10}" class="form-control" id="phone" placeholder="phone_no" required /><br>
+                   <label><b>Property Image :</b></label></br>
+                   <input type="file"  required /><br>
+                </div>
+            </div>
+            <br>
+            <label><b>Address:</b></label></br>
+            <div class="row">
+                <div class="col-md-6">
+                   <input type="address" class="form-control" id="address" placeholder="address" required /><br>    
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-md-2">
+                    <input type="text" class="form-control" id="city" placeholder="city" required /><br>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" id="state" placeholder="state" required /><br>
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control" id="pincode" placeholder="pincode" required /><br>
+                </div>
+            </div>
+            <label><b>Price Range:</b></label></br>
+            <div class="row">
+                    <div class="col-md-3">
+                           <input type="number" class="form-control" id="" placeholder="starting Range" required /><br>
+                    </div>
+                    <div class="col-md-3">
+                           <input type="number" class="form-control" id="" placeholder="Final Range" required /><br>
+                    </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
