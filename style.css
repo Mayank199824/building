@@ -5,8 +5,8 @@
 
   }
   footer{
-    border-style: solid;
-    border-radius: 10px;
+    border:5px solid;
+    border-color: #CCCCCC; 
   }
 
   .bl1:hover{
@@ -81,9 +81,10 @@
     height: 400px;
   }
   */
-.centered{
-  position: absolute;
-  margin-top: -10%;
-  left:50%;
-  transform: translate(-50%, -50%);
-}
+  #srch{
+    opacity: 0.7;
+    width: 600px;
+  }
+  #srch-button{
+    opacity: 0.8;
+  }
