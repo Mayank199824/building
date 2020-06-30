@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Home Page</title>
+  <title>Tech Table</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -11,49 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
-  <style>
-  /* Make the image fully responsive */
-  .carousel-inner img {
-    width: 100%;
-    height: 350;
-
-  }
-  footer{
-    border-style: solid;
-    border-radius: 10px;
-  }
-
-  .bl1:hover{
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1); 
-  }
-
-  .bl2:hover{
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1); 
-  }
-  .bl3:hover{
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1); 
-  }
-  .bl4:hover{
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1); 
-  }
-  .bl5:hover{
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1); 
-  }
-  .trans{
-    background-image: url("images/building-trans.jpg");
-    opacity: 1;
-  }
-  </style>
+  <script type="text/javascript" src="script.js"></script>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -74,7 +33,7 @@
              <a class="nav-link" href="#">About us</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              <a class="nav-link dropdown-toggle" id="navbardrop" href="#" data-toggle="dropdown" >
                 Profile
               </a>
               <div class="dropdown-menu">
@@ -89,36 +48,31 @@
              <a class="nav-link" href="#">Seller</a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
   </nav>
 
 <div id="demo" class="carousel slide" data-ride="carousel">
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
+
+<!-- carousel -->
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/building1.jpg" width="100%" height="350">  
+    <div class="carousel-caption ">
+      <div class="centered">
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"  >
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="images/building2.jpg" width="100%" height="350">   
+    <div class="carousel-item active cl1">
+      <img src="images/building1.jpg" width="100%" height="350">
     </div>
-    <div class="carousel-item">
-      <img src="images/building3.jpg" width="100%" height="350">  
+    <div class="carousel-item cl2">
+     <img src="images/building2.jpg" width="100%" height="350">
+    </div>
+    <div class="carousel-item cl3">
+      <img src="images/building3.jpg" width="100%" height="350">
     </div>
   </div>
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
 </div>
 <br>
 <div class="container">
@@ -153,7 +107,127 @@
     </div>
   </form>
 </div>
+<br>
+<div class="container">
+  <h3 style="text-align: center;">New Projects</h3>
+  <br><br>
+  <div class="row">
+    <div class="col-md-6 ">
+      <div class="card " id="new1">
+        <img class="card-img-top" src="images/building-label1.jpg" alt="Card image">
+        <div class="card-body">
+          <h3 class="card-title">Mitya Homes</h3>
+          <h5 style="color: rgb(76, 77, 79)">Mitya Infratech pvt ltd</h5>
+          <h6 style="color: rgb(143, 145, 147)">Dwarka Mor</h6>
+          <p>1,2,3 BHK Flats</p>
+          <h6>₹ 14.5 Lac</h6>
+          <a href="#" class="btn btn-danger">See Details</a>
+        </div>
+      </div>
+    </div>
 
+    <div class="col-md-6">
+      <div class="card" id="new2">
+        <img class="card-img-top" src="images/building-label2.jpg" alt="Card image">
+        <div class="card-body">
+          <h3 class="card-title">Pratap Homes</h3>
+          <h5 style="color: rgb(76, 77, 79)">Pratap Builder</h5>
+          <h6 style="color: rgb(143, 145, 147)">Pratap Nagar</h6>
+          <p>1,2,3,4 BHK Flats</p>
+          <h6>₹ 20 Lac</h6>
+          <a href="#" class="btn btn-danger">See Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<div class="container">
+  <h3 style="text-align: center;">Project Gallery - New Delhi</h3>
+  <br>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card" >
+        <img class="card-img-top" src="images/card1.jpg" alt="Card image">
+        <div class="card-body">
+          <h3 class="card-title">Floor Homes</h3>
+          <h5 style="color: rgb(76, 77, 79)">Aggarwal Real Estate</h5>
+          <h6 style="color: rgb(143, 145, 147)">Uttam Nagar</h6>
+          <p>2,3 BHK Flats</p>
+          <h6>₹ 19.5 Lac</h6>
+          <a href="#" class="btn btn-danger">See Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card" >
+        <img class="card-img-top" src="images/card2.jpg" alt="Card image">
+        <div class="card-body">
+          <h3 class="card-title">Pratap Homes</h3>
+          <h5 style="color: rgb(76, 77, 79)">Pratap Builder</h5>
+          <h6 style="color: rgb(143, 145, 147)">Pratap Nagar</h6>
+          <p>1,2,3,4 BHK Flats</p>
+          <h6>₹ 14.5 Lac</h6>
+          <a href="#" class="btn btn-danger">See Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img class="card-img-top" src="images/card3.jpg" alt="Card image">
+        <div class="card-body">
+          <h3 class="card-title">Find Homes</h3>
+          <h5 style="color: rgb(76, 77, 79)">Real State Consultant</h5>
+          <h6 style="color: rgb(143, 145, 147)">Greater Kailash 2</h6>
+          <p>3,4,5 BHK Flats</p>
+          <h6>₹2.85 Cr</h6>
+          <a href="#" class="btn btn-danger">See Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card" >
+        <img class="card-img-top" src="images/card4.jpg" alt="Card image">
+        <div class="card-body">
+          <h3 class="card-title">Mitya Homes</h3>
+          <h5 style="color: rgb(76, 77, 79)">Mitya Infratech pvt ltd</h5>
+          <h6 style="color: rgb(143, 145, 147)">Dwarka Mor</h6>
+          <p>1,2,3 BHK Flats</p>
+          <h6>₹ 14.5 Lac</h6>
+          <a href="#" class="btn btn-danger">See Details</a>
+        </div>
+      </div>
+    </div>
+    <!--
+    <div class="col-md-3">
+      <div class="card" >
+        <img class="card-img-top" src="images/card5.jpg" alt="Card image">
+        <div class="card-body">
+          <h3 class="card-title">Planner N maker  Homes</h3>
+          <h5 style="color: rgb(76, 77, 79)">Planner N Maker</h5>
+          <h6 style="color: rgb(143, 145, 147)">Dwarka Mor</h6>
+          <p>1,2,3 BHK Flats</p>
+          <h6>₹ 16 Lac</h6>
+          <a href="#" class="btn btn-danger">See Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card" >
+        <img class="card-img-top" src="images/card6.jpg" alt="Card image">
+        <div class="card-body">
+          <h3 class="card-title">Delhi Homes</h3>
+          <h5 style="color: rgb(76, 77, 79)">Delhi Developers</h5>
+          <h6 style="color: rgb(143, 145, 147)">Sector 24, Rohini</h6>
+          <p>1,2,3 BHK Flats</p>
+          <h6>₹ 21 Lac <p>onwards</p></h6>
+          <a href="#" class="btn btn-danger">See Details</a>
+        </div>
+      </div>
+    </div>
+  -->
+  </div>
+</div>
 <br>
 <div class="container">
   <h3 style="text-align: center"> Top Property Collections For You </h3>
@@ -219,7 +293,7 @@
       <!-- Grid column -->
       <div class="col-md-1"></div>
       <div class="col-md-6">
-        <img src="images/logo1.jpg" width="200" height="50" alt="" loading="lazy">
+        <img src="images/logo1.jpg" width="200" height="50" alt="" loading="lazy" style="border-radius: 20px;">
       </div>
 
     </div>
@@ -236,7 +310,21 @@
     <div class="col-md-1"></div>
     <div class="col-md-6">
         Launched in 2006, Magicbricks is India's No.1 online Property marketplace to buy, sell, and rent residential and commercial properties. Adjudged as the most preferred real estate portal in India by various independent surveys, Magicbricks offers a one-stop destination for all Property needs.
-
+        <br>
+    <div class="row">
+      <div class="col-md-2">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </div>
+      <div class="col-md-2">
+        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      </div>
+      <div class="col-md-2">
+        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+      </div>
+      <div class="col-md-2">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </div>
+      </div>
     </div>
 
   </div>

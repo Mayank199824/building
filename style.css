@@ -1,0 +1,89 @@
+/* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 350;
+
+  }
+  footer{
+    border-style: solid;
+    border-radius: 10px;
+  }
+
+  .bl1:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  }
+
+  .bl2:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  }
+  .bl3:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  }
+  .bl4:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  }
+  .bl5:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  }
+  .trans{
+    background-image: url("images/building-trans.jpg");
+    opacity: 1;
+    background-size: cover;
+  }
+  .card{
+    cursor: pointer;
+  }
+  .card:hover{
+    -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05); 
+  }
+  /*
+  #new1:hover{
+    -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
+  }
+  #new2:hover{
+    -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
+  }
+  */
+
+/*
+  .cl1{
+    background-image: url("images/building1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+  }
+  .cl2{
+    background-image: url("images/building2.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+  }
+  .cl3{
+    background-image: url("images/building3.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+  }
+  */
+.centered{
+  position: absolute;
+  margin-top: -10%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
